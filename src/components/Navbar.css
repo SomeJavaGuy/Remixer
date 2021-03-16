@@ -117,7 +117,7 @@
     }
   
     .navbar-logo {
-      position: absolute;
+      position: static;
       top: 0;
       left: 0;
       transform: translate(25%, 50%);
@@ -161,7 +161,7 @@
   }
 
   .doingud{
-    position: absolute;
+    position: fixed;
     width: 114px;
     height: 27px;
     left: 58.02px;

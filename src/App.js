@@ -1,6 +1,9 @@
 import React from 'react'
 import './App.css';
-import Navbar from './components/Navbar'
+import Navbar from './components/Navbar';
+import NFT from './components/NFT';
+import Remix from './components/Remix';
+
 import {
   BrowserRouter as Router,
   Route,
@@ -12,6 +15,8 @@ function App() {
     <>
      <Router>
        <Navbar />
+       <NFT />
+       <Remix />
       <Switch>
         <Route path="/main" />
       </Switch>

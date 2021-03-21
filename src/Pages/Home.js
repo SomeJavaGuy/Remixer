@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import NFT from '../components/NFT';
+import HomeComp from '../components/HomeComp';
 
-const License = (props) => {
+const Home = (props) => {
   return (
-  <div>Home Page</div>
+  <HomeComp>
+    
+  </HomeComp>
   );
 };
 
-export default License;
+export default Home;

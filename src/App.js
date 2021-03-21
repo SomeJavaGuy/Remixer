@@ -3,6 +3,7 @@ import './App.css';
 
 import License from './Pages/License';
 import Home from './Pages/Home';
+import Payment from './Pages/Payments';
 import Remix from './components/Remix';
 import Sidebar from './components/SideNavigation';
 
@@ -28,6 +29,7 @@ function App() {
         <Route exact path="/home" component={Home} />
         {/* <Route path="/about" component={About} /> */}
         <Route path="/license" component={License} />
+        <Route path="/payment" component={Payment} />
         {/* <Route component={NoMatch} /> */}
     </Switch>
     <Remix />

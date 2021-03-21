@@ -19,7 +19,7 @@ const ButtonDropDown = () => {
     <>
       {
         <Dropdown overlay={menu} trigger={['click']}>
-        <Button className='btn--outline' onClick={(e) => e.stopPropagation()}>
+        <Button className='btn--outline'>
           Get License <DownOutlined />
         </Button>
       </Dropdown>

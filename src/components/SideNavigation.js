@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 // import { Menu } from 'semantic-ui-react'
 import { Menu } from 'antd';
 import {StyledSideNav, MenuWrapper} from './StyledSideNav';
+import { Link } from 'react-router-dom';
+import './Remix.css';
 
 // class SideNav extends React.Component {
 //   render() {
@@ -35,10 +37,22 @@ export default class Sidebar extends Component {
         <MenuWrapper
           mode="inline" defaultSelectedKeys={['home']} 
           onClick={this.handleItemClick}>
-          <Menu.Item key='home'>Home</Menu.Item>
-          <Menu.Item key='messages'>Licences</Menu.Item>
-          <Menu.Item key='friends'>Remix</Menu.Item>
-          <Menu.Item key="profile">Profile</Menu.Item>
+          <Menu.Item key='home'>
+            <img src="./images/home.png"  alt="home" className="images1"/>
+            <Link to={"\home"}>Home</Link>
+          </Menu.Item>
+          <Menu.Item key='license'>
+            <img src="./images/license.png" alt="license" className="images1"/>
+            <Link to={"\license"}>Licences</Link>
+          </Menu.Item>
+          <Menu.Item key='remix'>
+            <img src="./images/remix.png"  alt="remixes" className="images1"/>
+            <Link to={"\remixes"}>Remixes</Link>
+          </Menu.Item>
+          <Menu.Item key="profile">
+            <img src="./images/profile.png"  alt="profile" className="images1"/>
+            <Link to={"\profile"}>Profile</Link>
+          </Menu.Item>
         </MenuWrapper>
       </StyledSideNav>
     )

@@ -38,3 +38,13 @@
     position: relative;
     display: inline;
 }
+
+.images1{
+  height: 20px;
+  width: 18px;
+  position: relative;
+  display: inline;
+  vertical-align: text-bottom;
+  margin-right:8px;
+
+}

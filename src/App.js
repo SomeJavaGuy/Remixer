@@ -1,6 +1,5 @@
 import React from 'react'
 import './App.css';
-import Navbar from './components/Navbar';
 
 import License from './Pages/License';
 import Home from './Pages/Home';
@@ -25,7 +24,7 @@ function App() {
         <Route path="/main" />
       </Switch> */}
       <Switch>
-        <Route exact path="/home" component={Home} />
+        <Route exact path="/" component={Home} />
         {/* <Route path="/about" component={About} /> */}
         <Route path="/license" component={License} />
         {/* <Route component={NoMatch} /> */}

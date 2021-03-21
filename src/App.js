@@ -1,8 +1,11 @@
 import React from 'react'
 import './App.css';
 import Navbar from './components/Navbar';
-import NFT from './components/NFT';
+
+import License from './Pages/License';
+import Home from './Pages/Home';
 import Remix from './components/Remix';
+import Sidebar from './components/SideNavigation';
 
 import {
   BrowserRouter as Router,
@@ -14,12 +17,20 @@ function App() {
   return (
     <>
      <Router>
-       <Navbar />
-       <NFT />
-       <Remix />
-      <Switch>
+       {/* <Navbar /> */}
+       <Sidebar />
+       {/* <NFT /> */}
+       
+      {/* <Switch>
         <Route path="/main" />
-      </Switch>
+      </Switch> */}
+      <Switch>
+        <Route exact path="/home" component={Home} />
+        {/* <Route path="/about" component={About} /> */}
+        <Route path="/license" component={License} />
+        {/* <Route component={NoMatch} /> */}
+    </Switch>
+    <Remix />
     </Router>
 
     </>

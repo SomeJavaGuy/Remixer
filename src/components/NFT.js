@@ -5,26 +5,31 @@ import React, { useState, useEffect } from 'react';
 
 
 
-function NFT() {
+const NFT = (props) => {
     const [button, setButton] = useState(true);
     return (
         <>
-
-        <div className='text'>
+        <div className="licWrapper">
+          <div className='text'>
+            <div>
+              <h1 className='creater'> Sanchit Banati </h1>
+              {/* <img src="./images/unnamed.jpg" roundedCircle alt='my'className='creator-image'/> */}
+              </div>
+              <div style={{"width": "70%", height:"60%"}}>
+                <h2 className='Name'> Banati Bombers </h2>
+                <p className='text2'>Let's talk about Money, Finance, Stock Markets, Savings, Business and Most Importantly Life of STudent <br></br>
+                  who is motivated to save money and live like a cheap star in his 20's to transform his life and live his <br></br>
+                  dream of becoming a personal finance enthusiast. </p>
                 
-            <h3 className='creater'> Sanchit Banati </h3>
-            <img src="./images/unnamed.jpg" roundedCircle alt='my'className='creator-image'/>
-            <h1 className='Name'> Banati Bombers </h1>
-            <p className='text2'>Let's talk about Money, Finance, Stock Markets, Savings, Business and Most Importantly Life of STudent <br></br>
-            who is motivated to save money and live like a cheap star in his 20's to transform his life and live his <br></br>
-            dream of becoming a personal finance enthusiast. </p>
-            {button && <Button buttonStyle='btn--outline' className='dropdown'>Get License </Button>} 
-        </div>
-        <div className='nft'>
-            <img src="./images/download.jpeg" alt='cryptokitty' />
+                <Button buttonStyle='btn--outline' className='dropdown'>Get License </Button>
+              </div>
+          </div>
+          <div className='nft'>
+              <img src="./images/download.jpeg" alt='cryptokitty' />
+          </div>
         </div>
         </>
-    )
-}
+    );
+};
 
-export default NFT
+export default NFT;

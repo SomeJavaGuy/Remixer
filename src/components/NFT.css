@@ -1,7 +1,7 @@
 .licWrapper {
   display: flex;
   width:100vw;
-  height:70vh;
+  height:60vh;
   margin-left: 20rem;
   flex-direction: row;
 }
@@ -9,13 +9,13 @@
 .homeWrapper {
   display: flex;
   width:100vw;
-  height:70vh;
+  height:60vh;
   margin-left: 20rem;
   flex-direction: column;
 }
 
 .nft{
-    height:  70vh;
+    height: 60vh;
     width: 100vw;
     /* margin-left: 1200px; */
     /* margin-top: 20rem; */
@@ -51,7 +51,8 @@
 .Name{
     font-size: 50px;
     position: relative;
-    /* margin-left: 300px; */
+    margin-top: 5px;
+    margin-bottom: 2rem;
 }
 .creater{
     font-size: x-large;

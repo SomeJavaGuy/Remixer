@@ -7,7 +7,7 @@ import { Menu, Dropdown, Button} from 'antd';
 import styled from  'styled-components';
 import { DownOutlined } from '@ant-design/icons';
 import './Button.css';
-import { ButtonDropDown } from './ButtonDropDown';
+// import { ButtonDropDown } from './ButtonDropDown';
 
 export const MenuDDWrapper = styled(Menu)`
 padding-left: 0;
@@ -43,12 +43,12 @@ li {
 `;
 
 const menu = (
-  <MenuDDWrapper onClick={(e) => e.stopPropagation()}>
+  <MenuDDWrapper>
     <Menu.Item key="0">
-      <Link href="">1st menu item</Link>
+      <Link to={"\payment"}>Crypto</Link>
     </Menu.Item>
     <Menu.Item key="1">
-      <Link to="">2nd menu item</Link>
+      <Link to={"\payment"}>Credit Card</Link>
     </Menu.Item>
   </MenuDDWrapper>
 );
@@ -80,19 +80,17 @@ const NFT = (props) => {
                 <h1 className='creater'> Sanchit Banati </h1>
               </div>
               </div>
-              <div style={{"width": "70%", height:"70%"}}>
-                <h2 className='Name'> Banati Bombers </h2>
+              <div style={{"width": "70%", height:"65%"}}>
+                <h3 className='Name'> Banati Bombers </h3>
                 <p className='text2'>Let's talk about Money, Finance, Stock Markets, Savings, Business and Most Importantly Life of STudent <br></br>
                   who is motivated to save money and live like a cheap star in his 20's to transform his life and live his <br></br>
                   dream of becoming a personal finance enthusiast. </p>
                 
                 {/* <Button buttonStyle='btn--outline' className='dropdown'>Get License </Button> */}
-                {/* <Dropdown overlay={menu} trigger={['click']}>
-                  <Button className='btn--outline' onClick={(e) => e.stopPropagation()}>
-                    Get License <DownOutlined />
-                  </Button>
-                </Dropdown> */}
-                {/* <ButtonDropDown/> */}
+
+
+                {/* <Link className='btn--outline' to="/payment">Test</Link> */}
+                {/* If the payment doens't work in the dropdown button use the above Link button */}
                 {<DropDownBtn></DropDownBtn>}
               </div>
           </div>
